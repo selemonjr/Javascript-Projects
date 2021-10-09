@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: sans-serif;
+}
+.title {
+    font-size: 50px;
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0 0 0;
+}
+.item {
+    text-align: center;
+    margin: 2% 7% 0 7%;
+}
+.icon-youtube {
+    font-size: 70px;
+    color: red;
+}
+.icon-instagram {
+    font-size: 70px;
+    color: rgb(230, 5, 91);
+}
+.icon-twitter {
+    font-size: 70px;
+    color: rgb(96, 96, 243);
+}
+.counter {
+    font-size: 50px;
+    margin: 5% 0 0 0;
+}
+
+@media(max-width:700px) {
+    .title {
+        font-size: 25px;
+    }
+    .container {
+        display: block;
+        margin: 10% 0 0 0;
+    }
+}

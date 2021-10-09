@@ -1,0 +1,19 @@
+ *{
+     margin: 0;
+     padding: 0;
+ }
+ body {
+     display: grid;
+     place-items: center;
+ }
+/* span > b  {
+     background-color: red;
+ } */
+
+/* li.red + li {
+     color: red;
+ } */
+
+/* span:only-child {
+     color: red;
+ } */

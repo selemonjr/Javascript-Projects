@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+header {
+    background: url("../images/apple.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    transition: 0.5s;
+}
+
+nav.nav{
+    background:#fff;
+}
+nav.nav ul li a{
+    color: #000;
+}
+nav.nav .title {
+    color: #000;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+}
+
+.navlinks ul li {
+    display: inline-block;
+    padding: 20px;
+    list-style: none;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navlinks ul li::after {
+    content: "";
+    height: 2px;
+    display: block;
+    width: 0;
+    transition: 0.5s;
+    background: red;
+}
+
+.navlinks ul li:hover::after {
+    width: 100%;
+}
+.close {
+    display: none;
+}
+.bar {
+    color: white;
+    display: block;
+    font-size: 40px;
+    display: none;
+}
+#btn {
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    font-size: 20px;
+    margin-top: 10%;
+    top: 30%;
+    left: 70%;
+    transform: translate(0%,-50%);
+    transition: 0.5s;
+}
+
+#btn:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+@media(max-width:700px) {
+    .navlinks {
+        background: #000;
+        top:0;
+        right: -200px;
+        width: 200px;
+        position: absolute;
+        z-index: 1000;
+        height: 100vh;
+        display: block;
+        transition: 1s;
+    }
+    .navlinks ul li {
+        display: block;
+        padding: 10px;
+    }
+    .title {
+        font-size: 15px;
+    }
+    .bar {
+        color: white;
+        display: block;
+        font-size: 20px;
+        display: block;
+        margin: 10px;
+        padding-right: 10px;
+    }
+    nav.nav .bar{
+       color: #000;
+    }
+    nav.nav .close{
+        color: #fff;
+     }
+     nav.nav ul li a {
+         color: white;
+     }
+     nav.nav .close:hover {
+         color: red;
+     }
+    .close {
+        font-size: 30px;
+        margin: 10px;
+        color: white;
+        display: block;
+    }
+    .close:hover {
+        color: red;
+    }
+}
+#course,#contact,#about {
+    margin: 0% 0 0 0;
+    background: #000;
+    color: #fff;
+    padding: 30px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+#lorem {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+/* footer */
+#footer {
+    padding: 20px;
+    background: #000;
+    color: #fff;
+}
+#right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+#date {
+    padding-left:0.5%;
+}
+
+.arrow {
+    background: red;
+    position: fixed;
+    right: 30px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+
+}
+.active {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+@keyframes glow {
+    0% {
+        font-size: 40px;
+    }
+    100%{
+        font-size: 50px;
+    }
+}
+
+@media(max-width:700px) {
+    #text {
+        font-size: 20px;
+    }
+    .arrow {
+        background: red;
+    color: #fff;
+    bottom: 30px;
+    position: fixed;
+    right: 1px;
+    border-radius: 50%;
+    width: 20%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    }
+    .arrow.show {
+        pointer-events: auto;
+        opacity: 1;
+    }
+}

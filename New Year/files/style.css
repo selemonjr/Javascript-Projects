@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url("../pictures/m.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+}
+.container {
+    height: 400px;
+    width: 900px;
+    background: rgba( 255, 255, 255, 0.1 );
+backdrop-filter: blur( 1px );
+-webkit-backdrop-filter: blur( 1px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+text-align: center;
+}
+.title {
+    color: #fff;
+    margin: 5% 0 0 0;
+}
+.timer-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15% 0 0 0;
+}
+.days,.hours,.minutes,.seconds {
+    font-size: 70px;
+}
+.text {
+    font-size: 40px;
+    text-align: center;
+}

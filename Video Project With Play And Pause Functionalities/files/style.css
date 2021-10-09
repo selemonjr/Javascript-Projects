@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+}
+header {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    position: relative;
+    place-items: center;
+}
+#video-container {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -2;
+}
+#btn {
+    width: 100px;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 7%;
+    left: 7%;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+}
+#switch {
+    background: red;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    position: absolute;
+    border-radius: 10px;
+}
+#switch span {
+    font-size: 10px;
+}
+.slide #switch {
+    left: 50%;
+}
